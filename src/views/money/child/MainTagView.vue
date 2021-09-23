@@ -1,5 +1,5 @@
 <template>
-  <TagViews>
+  <div>
     <TagViewItem
       v-for="(itemInfo, index) in $store.state.tagInfo"
       :Index="index"
@@ -11,16 +11,14 @@
       <img slot="img" :src="itemInfo.img" alt="" />
       <span slot="title">{{ itemInfo.title }}</span>
     </TagViewItem>
-  </TagViews>
+  </div>
 </template>
 
 <script>
-import TagViews from "./TagViews.vue";
 import TagViewItem from "./TagViewItem.vue";
 export default {
   name: "MainTagView",
   components: {
-    TagViews,
     TagViewItem,
   },
   data() {
@@ -42,7 +40,7 @@ export default {
 
 <style>
 .active {
-  border-color: deepskyblue;
+  border-color: rgba(255, 208, 0, 0.897);
   color: black;
 }
 </style>

@@ -67,7 +67,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   height: 40%;
-  width: 80%;
+  width: 90%;
   text-align: center;
   border-radius: 30px;
   border: 1px solid rgba(0, 140, 255, 0.856);
@@ -102,11 +102,12 @@ export default {
   height: 25px;
   width: 60%;
   padding-left: 5px;
+  outline: none;
   border: 0;
   border-bottom: 1px solid rgba(0, 140, 255, 0.856);
 }
 #inputInfo button {
-  margin: 20px 15px 0 15px;
+  margin: 30px 15px 0 15px;
   width: 80px;
   height: 40px;
   border: 0;
