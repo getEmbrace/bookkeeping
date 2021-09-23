@@ -6,10 +6,10 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     tagInfo: [
-      { img: "/assets/img/tagImg/yifu.png", title: '衣' },
-      { img: "~assets/img/tagImg/shipin.png", title: '食' },
-      { img: "~assets/img/tagImg/zhusu.png", title: '住' },
-      { img: "~assets/img/tagImg/hangli.png", title: '行' },
+      { img: "/img/tagImg/yifu.png", title: '衣' },
+      { img: "/img/tagImg/shipin.png", title: '食' },
+      { img: "/img/tagImg/zhusu.png", title: '住' },
+      { img: "/img/tagImg/hangli.png", title: '行' },
     ],
     dataInfo: {
       type: "",

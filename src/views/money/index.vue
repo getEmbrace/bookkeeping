@@ -1,7 +1,7 @@
 <template>
   <div id="money">
     <div class="bg">
-      <img src="~assets/img/背景.png" alt="" />
+      <img src="~assets/img/bg.png" alt="" />
     </div>
     <div class="topInput">
       <div class="select" @click="item_click">

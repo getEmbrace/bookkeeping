@@ -12,10 +12,10 @@
       <span slot="number"
         >{{ item.type == "收入" ? "+" : "-" }}{{ item.money }}</span
       >
-      <img slot="img" :src="item.img" alt="" />
+      <img slot="img" :src="item.tagImg" alt="" />
     </InfoListItem>
     <div class="dataList_default" v-if="getDataList.length == 0">
-      <img src="~assets/img/暂无记录.png" alt="">
+      <img src="~assets/img/noData.png" alt="">
     </div>
   </div>
 </template>
