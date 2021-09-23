@@ -8,7 +8,7 @@
         {{ getType }}
         <span>></span>
       </div>
-      <input type="text" class="number" v-model="moneyNum" placeholder="0"/>
+      <input type="number" class="number" v-model="moneyNum" placeholder="0"/>
     </div>
     <div class="remarks">
       <label for="备注：">备注：</label>

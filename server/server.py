@@ -2,6 +2,7 @@
 from socket import *
 import threading
 import datetime
+import ssl
 
 import myHttp
 from resources import Resources
@@ -69,6 +70,11 @@ class Server:
         conn.send(response)
         conn.close()
 
+    def setSSL(self, certfile, keyfile):
+        context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+        context.load_cert_chain(certfile=certfile, keyfile=keyfile)
+        self.context = context
+        
     def run(self):
         sock = socket(AF_INET, SOCK_STREAM)
         sock.bind((self.IP, self.Port))
@@ -87,4 +93,5 @@ class Server:
 
 if __name__ == "__main__":
     server = Server("192.168.0.100",8080, root.routers)
+    server.setSSL('/root/vuePro_yujian/server/key/top.pem', '/root/vuePro_yujian/server/key/top.key')
     server.run()
